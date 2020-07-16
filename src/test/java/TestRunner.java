@@ -6,12 +6,10 @@ import org.testng.annotations.Test;
 @CucumberOptions(
         features = "src/test/resources/cucumber/scenarios",
         glue = {"steps"},
-        tags = {"not @Ignore"},
         plugin = {"io.qameta.allure.cucumber4jvm.AllureCucumber4Jvm",
-                "pretty"
-        }
-)
-
+                "pretty",
+                "json:target/cucumber.json",
+                "html:target/cucumber.html"})
 public class TestRunner extends AbstractTestNGCucumberTests {
 }
 
