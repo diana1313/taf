@@ -1,6 +1,6 @@
 package pages;
 
-import driver.ChromeDriverFactory;
+import mdriver.CustomChromeDriver;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
@@ -9,7 +9,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class Page implements BasePage {
 
-    protected WebDriver driver = ChromeDriverFactory.getDriver();
+    protected WebDriver driver = new CustomChromeDriver().getDriver();
 
     @Override
     public void open(String url) {

@@ -6,14 +6,14 @@ import driver.ChromeDriverFactory;
 
 public class Hooks {
 
-    @Before
-    public void setupDriver() {
-        ChromeDriverFactory.initializeDriver();
-    }
-
-    @After
-    public void tearDown() {
-        ChromeDriverFactory.quit();
-    }
+//    @Before
+//    public void setupDriver() {
+//        ChromeDriverFactory.initializeDriver();
+//    }
+//
+//    @After
+//    public void tearDown() {
+//        ChromeDriverFactory.quit();
+//    }
 
 }
