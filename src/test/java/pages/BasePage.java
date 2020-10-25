@@ -10,4 +10,5 @@ public interface BasePage {
     boolean isElementPresent(By by);
     boolean isElementDisplayed(By by);
     void initElements();
+    boolean verify();
 }

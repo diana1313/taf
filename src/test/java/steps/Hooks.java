@@ -2,18 +2,18 @@ package steps;
 
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
-import driver.ChromeDriverFactory;
+import driver.CustomDriverFactory;
 
 public class Hooks {
 
-//    @Before
-//    public void setupDriver() {
-//        ChromeDriverFactory.initializeDriver();
-//    }
-//
-//    @After
-//    public void tearDown() {
-//        ChromeDriverFactory.quit();
-//    }
+    @Before
+    public void setupDriver() {
+        CustomDriverFactory.initializeDriver();
+    }
+
+    @After
+    public void tearDown() {
+        CustomDriverFactory.quit();
+    }
 
 }
